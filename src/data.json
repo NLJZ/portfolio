@@ -1,0 +1,23 @@
+[
+  {
+    "id": "001",
+    "project": "elenazieser.de",
+    "description": "Portfolio site for award-winning radio artist and audio engineer Elena Zieser.",
+    "link": "http://www.elenazieser.de",
+    "img": "./img/projects/elzi.jpg"
+  },
+  {
+    "id": "002",
+    "project": "szim.de",
+    "description": "Portfolio site for print designer szim.",
+    "link": "http://www.szim.de",
+    "img": "./img/projects/szim.jpg"
+  },
+  {
+    "id": "003",
+    "project": "Javascript Blackjack",
+    "description": "Blackjack game created as a group project during DCI web development course.",
+    "link": "https://nljz.github.io/blackjack/",
+    "img": "./img/projects/blackjack.jpg"
+  }
+]

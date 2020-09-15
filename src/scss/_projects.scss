@@ -1,0 +1,32 @@
+#projects {
+  .project {
+    width: 50%;
+    padding-top: 3rem;
+    a {
+      color: #222;
+    }
+    h2 {
+      padding-bottom: 1rem;
+    }
+
+    p {
+      padding-top: 1rem;
+    }
+  }
+  .project:nth-child(odd) {
+    padding-right: 1rem;
+  }
+  .project:nth-child(even) {
+    padding-left: 1rem;
+  }
+  img {
+    width: 100%;
+    max-height: 515px;
+    object-fit: cover;
+  }
+  #projectHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  top: 0;
+  text-transform: uppercase;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1200px;
+  // padding: 0 0 2rem 0;
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  a {
+    color: #222;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+  }
+  .active {
+    color: red;
+    text-decoration: none;
+    h1 {
+      color: black;
+    }
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 1rem;
+  }
+  img {
+    max-width: 90px;
+    color: black;
+  }
+}

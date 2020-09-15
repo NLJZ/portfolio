@@ -1,0 +1,43 @@
+@import "normalize";
+@import "navbar";
+@import "home";
+@import "projects";
+
+* {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  color: #222;
+}
+
+#root {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex-grow: 1;
+  width: 100%;
+  padding: 2rem;
+}
