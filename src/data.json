@@ -3,6 +3,7 @@
     "id": "001",
     "project": "elenazieser.de",
     "description": "Portfolio site for award-winning radio artist and audio engineer Elena Zieser.",
+    "tech": "HML5, CSS3 (currently rebuilding as a single page react app with sitewide radio player).",
     "link": "http://www.elenazieser.de",
     "img": "./img/projects/elzi.jpg"
   },
@@ -10,6 +11,7 @@
     "id": "002",
     "project": "szim.de",
     "description": "Portfolio site for print designer szim.",
+    "tech": "HML5, CSS3 (currently rebuilding as a singe page react app).",
     "link": "http://www.szim.de",
     "img": "./img/projects/szim.jpg"
   },
@@ -17,7 +19,16 @@
     "id": "003",
     "project": "Javascript Blackjack",
     "description": "Blackjack game created as a group project during DCI web development course.",
+    "tech": "HML5, CSS3 (currently rebuilding as a singe page react app).",
     "link": "https://nljz.github.io/blackjack/",
     "img": "./img/projects/blackjack.jpg"
+  },
+  {
+    "id": "004",
+    "project": "Zamagana Synth",
+    "description": "Browser-synth built with Tone.js and React.js. Created as a group project during my one year DCI web development course.",
+    "tech": "HML5, CSS3 (currently rebuilding as a single page react app with sitewide radio player).",
+    "link": "https://gabrielaacha.github.io/zamagana_synth/",
+    "img": "./img/projects/zamagana.jpg"
   }
 ]

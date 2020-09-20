@@ -1,30 +1,61 @@
 @import "normalize";
-@import "navbar";
-@import "home";
-@import "projects";
-
+@import "_home";
 * {
-  font-family: helvetica, arial, sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   min-width: 100vw;
   min-height: 100vh;
-  color: #222;
 }
 
 #root {
   width: 100%;
 }
 
+a {
+  color: #222;
+}
+
+ul {
+  display: inline-flex;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+  max-width: 800px;
+  color: #444;
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  text-transform: lowercase;
+  h1 {
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+}
+
 .container {
-  max-width: 1200px;
   height: 100%;
   width: 100%;
   min-height: 100vh;
+  max-width: 800px;
+  border-width: 0 1rem;
   margin: 0 auto;
 }
 
@@ -34,10 +65,90 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 section {
+  max-width: 800px;
+  padding: 0 1rem;
   flex-grow: 1;
-  width: 100%;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  img {
+    max-width: 800px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.projectContent {
+  display: inline-flex;
+}
+
+.imageHolder {
+  margin-right: 1rem;
+  border: 1px solid #222;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 330px;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+
+#projectNav {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  div {
+    cursor: pointer;
+  }
+  div:nth-child(odd) {
+    padding-right: 1rem;
+  }
+}
+
+.projectDescription {
+  width: 50%;
+  margin-left: 1rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+#projectGridNav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.project {
+  width: 24%;
+  position: relative;
+  object-fit: cover;
+  img {
+    height: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  img:hover {
+    filter: none;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+img:hover {
+}
+
+footer {
+  align-self: center;
+  margin-top: auto;
+  width: calc(100% - 2rem);
+  padding: 1rem 0;
 }

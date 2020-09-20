@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../images/nlj.svg";
 
 const Navbar = () => {
   return (
     <nav>
       <NavLink to="/">
-        <img src={logo} alt="logo" />
+        <h1>Nathan Johnson</h1>
       </NavLink>
       <ul>
         <li>

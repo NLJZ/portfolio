@@ -1,32 +1,60 @@
 #projects {
-  .project {
-    width: 50%;
-    padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  #projectHolder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    .project {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #fff;
+    }
     a {
       color: #222;
     }
+    .imageHolder {
+      width: 50%;
+      margin-right: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+    .projectContent {
+      display: flex;
+      flex-direction: row;
+    }
+    .projectPic {
+      width: 150px;
+      height: 150px;
+      margin-right: 2rem;
+      img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #fff;
+        box-sizing: content-box;
+      }
+    }
     h2 {
       padding-bottom: 1rem;
+      width: 100%;
+      margin: 0;
+      font-weight: normal;
     }
-
-    p {
-      padding-top: 1rem;
-    }
   }
-  .project:nth-child(odd) {
-    padding-right: 1rem;
-  }
-  .project:nth-child(even) {
-    padding-left: 1rem;
-  }
-  img {
-    width: 100%;
-    max-height: 515px;
-    object-fit: cover;
-  }
-  #projectHolder {
+  #projectNav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+    div {
+      cursor: pointer;
+      padding-bottom: 0.5rem;
+    }
   }
 }

@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar.js";
+import Hands from "../images/handstyping7.jpg";
 
 const Home = () => {
   return (
     <section id="home">
       <div id="splash-content">
-        <h1>Nathan Lee Johnson</h1>
         <p>Berlin-based, Fullstack Web Developer</p>
+        <img src={Hands} />
       </div>
-      <Navbar />
     </section>
   );
 };
