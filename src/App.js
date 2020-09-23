@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  withRouter,
-} from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
 

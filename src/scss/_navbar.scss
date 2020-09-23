@@ -4,11 +4,31 @@ nav {
   margin-bottom: 1rem;
   justify-content: space-between;
   width: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
   text-transform: lowercase;
 
-  h1 {
+  li:first-child {
+    padding-left: 0;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  .title {
     font-size: 1rem;
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    a {
+      font-size: 0.7rem;
+    }
+
+    .title {
+      font-size: 0.7rem;
+    }
   }
 }

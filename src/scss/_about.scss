@@ -1,0 +1,19 @@
+#about {
+  ul {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  li {
+    padding: 0 0.5rem 0 0;
+    display: inline-block;
+  }
+  li:after {
+    content: ",";
+  }
+  li:last-child:after {
+    content: ".";
+  }
+  img {
+    padding-bottom: 1rem;
+  }
+}

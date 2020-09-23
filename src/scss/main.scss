@@ -2,7 +2,7 @@
 @import "_navbar";
 @import "_projects";
 @import "_footer";
-
+@import "_about";
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -34,6 +34,7 @@ p {
 
 ul {
   display: inline-flex;
+  align-items: center;
 }
 
 li {
