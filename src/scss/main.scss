@@ -1,15 +1,20 @@
 @import "normalize";
-@import "_home";
+@import "_navbar";
+@import "_projects";
+@import "_footer";
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+  font-size: 1.1rem;
 }
 
 body {
   min-width: 100vw;
   min-height: 100vh;
+  // background-color: rgb(218, 215, 215);
 }
 
 #root {
@@ -18,6 +23,13 @@ body {
 
 a {
   color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  max-width: 800px;
+  color: #444;
 }
 
 ul {
@@ -29,27 +41,6 @@ li {
   padding-left: 0.5rem;
 }
 
-p {
-  margin-bottom: 1rem;
-  line-height: 1.4rem;
-  max-width: 800px;
-  color: #444;
-}
-
-nav {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 1rem;
-  text-transform: lowercase;
-  h1 {
-    font-size: 1rem;
-    text-transform: capitalize;
-  }
-}
-
 .container {
   height: 100%;
   width: 100%;
@@ -57,6 +48,7 @@ nav {
   max-width: 800px;
   border-width: 0 1rem;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .App {
@@ -81,74 +73,22 @@ section {
   }
 }
 
-.projectContent {
-  display: inline-flex;
+// Page Transition Animation
+
+.container.fade-enter {
+  opacity: 0.01;
 }
 
-.imageHolder {
-  margin-right: 1rem;
-  border: 1px solid #222;
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  max-height: 330px;
-  overflow: hidden;
-  img {
-    height: 100%;
-    width: 100%;
-    display: block;
-  }
+.container.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
 }
 
-#projectNav {
-  display: inline-flex;
-  margin-bottom: 1rem;
-  text-decoration: underline;
-  div {
-    cursor: pointer;
-  }
-  div:nth-child(odd) {
-    padding-right: 1rem;
-  }
+.container.fade-exit {
+  opacity: 1;
 }
 
-.projectDescription {
-  width: 50%;
-  margin-left: 1rem;
-  h2 {
-    margin-bottom: 1rem;
-  }
-}
-
-#projectGridNav {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 3rem;
-}
-
-.project {
-  width: 24%;
-  position: relative;
-  object-fit: cover;
-  img {
-    height: 100%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  img:hover {
-    filter: none;
-    transition: 0.8s ease-in-out;
-    cursor: pointer;
-  }
-}
-
-img:hover {
-}
-
-footer {
-  align-self: center;
-  margin-top: auto;
-  width: calc(100% - 2rem);
-  padding: 1rem 0;
+.container.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

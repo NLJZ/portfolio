@@ -1,60 +1,74 @@
-#projects {
-  display: flex;
-  flex-direction: column;
-  #projectHolder {
+.imageHolder {
+  margin-right: 1rem;
+  border: 1px solid #222;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  img {
+    height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
-    .project {
-      margin: 2rem 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      color: #fff;
-    }
-    a {
-      color: #222;
-    }
-    .imageHolder {
-      width: 50%;
-      margin-right: 2rem;
-      img {
-        width: 100%;
-      }
-    }
-    .projectContent {
-      display: flex;
-      flex-direction: row;
-    }
-    .projectPic {
-      width: 150px;
-      height: 150px;
-      margin-right: 2rem;
-      img {
-        width: 150px;
-        height: 150px;
-        border: 2px solid #fff;
-        box-sizing: content-box;
-      }
-    }
-    h2 {
-      padding-bottom: 1rem;
-      width: 100%;
-      margin: 0;
-      font-weight: normal;
-    }
+    display: block;
   }
-  #projectNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #222;
-    div {
-      cursor: pointer;
-      padding-bottom: 0.5rem;
-    }
+}
+
+#projectNav {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  div {
+    cursor: pointer;
+  }
+  div:nth-child(odd) {
+    padding-right: 1rem;
+  }
+}
+
+.projectDescription {
+  width: 100%;
+  margin-top: 1rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+#projectGridNav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.project {
+  width: 30%;
+  position: relative;
+  object-fit: cover;
+  border: 1px solid #222;
+  margin-top: 1rem;
+  margin-right: auto;
+  img {
+    height: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  img:hover {
+    filter: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .projectContent {
+    display: inline-flex;
+  }
+  .imageHolder {
+    width: 50%;
+    max-height: 365px;
+  }
+
+  .projectDescription {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 1rem;
   }
 }

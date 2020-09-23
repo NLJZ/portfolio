@@ -1,10 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  withRouter,
+} from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import Projects from "./Components/projects/Projects";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
+
 import Footer from "./Components/Footer";
 
 const App = () => {
@@ -13,12 +17,7 @@ const App = () => {
       <div className="App">
         <Router>
           <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/work" component={Projects} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
+          <Routes />
         </Router>
         <Footer />
       </div>

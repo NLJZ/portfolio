@@ -6,10 +6,12 @@ const Project = (props) => {
     <React.Fragment>
       <div className="projectContent">
         <div className="imageHolder">
-          <img
-            src={process.env.PUBLIC_URL + `${props.currentProject.img}`}
-            alt={props.currentProject.project}
-          />
+          <a href={props.currentProject.link} target="blank">
+            <img
+              src={process.env.PUBLIC_URL + `${props.currentProject.img}`}
+              alt={props.currentProject.project}
+            />
+          </a>
         </div>
         <div className="projectDescription">
           <a href={props.currentProject.link} target="blank">
