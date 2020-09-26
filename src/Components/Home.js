@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section id="home">
       <div id="splash-content">
-        <p>Berlin-based, Fullstack Web Developer</p>
+        <p>Berlin-based Web Developer</p>
         <img src={Hands} alt="splash of hands typing" />
       </div>
     </section>
