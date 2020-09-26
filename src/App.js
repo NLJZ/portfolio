@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="container">
       <div className="App">
-        <Router>
+        <Router basename="/portfolio">
           <Navbar />
           <Routes />
         </Router>
