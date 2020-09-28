@@ -51,7 +51,6 @@ const Projects = () => {
   return (
     <section id="projects">
       <p>Here are some projects I have worked on recently...</p>
-      <div id="projectNav"></div>
 
       <div id="projectHolder">
         <div
