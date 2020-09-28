@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
@@ -10,10 +10,10 @@ const App = () => {
   return (
     <div className="container">
       <div className="App">
-        <Router basename="/portfolio">
+        <HashRouter basename="/">
           <Navbar />
           <Routes />
-        </Router>
+        </HashRouter>
         <Footer />
       </div>
     </div>

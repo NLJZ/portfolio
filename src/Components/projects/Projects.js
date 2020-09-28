@@ -51,8 +51,11 @@ const Projects = () => {
   return (
     <section id="projects">
       <p>Here are some projects I have worked on recently...</p>
-      <div id="projectNav">
+      <div id="projectNav"></div>
+
+      <div id="projectHolder">
         <div
+          className="prev"
           onClick={() => {
             if (projectId !== 0) {
               setProjectId(projectId - 1);
@@ -61,9 +64,12 @@ const Projects = () => {
             }
           }}
         >
-          previous
+          {" "}
+          &lsaquo;
         </div>
+        <Project currentProject={currentProject} />
         <div
+          className="next"
           onClick={() => {
             if (projectId !== projectData.length - 1) {
               setProjectId(projectId + 1);
@@ -72,12 +78,9 @@ const Projects = () => {
             }
           }}
         >
-          next
+          {" "}
+          &rsaquo;
         </div>
-      </div>
-
-      <div id="projectHolder">
-        <Project currentProject={currentProject} />
       </div>
 
       <div id="projectGridNav">{gridItems}</div>

@@ -32,6 +32,33 @@
   }
 }
 
+#projectHolder {
+  border: solid #ddd;
+  border-width: 1px 0;
+  padding: 1rem 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.next {
+  margin-left: 1rem;
+}
+
+.prev {
+  margin-right: 1rem;
+}
+
+.next,
+.prev {
+  font-size: 3rem;
+  color: #bbb;
+}
+
+.next:hover,
+.prev:hover {
+  cursor: pointer;
+}
+
 #projectGridNav {
   display: inline-flex;
   flex-wrap: wrap;
