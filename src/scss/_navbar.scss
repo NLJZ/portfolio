@@ -6,13 +6,13 @@ nav {
   width: 100%;
   padding: 1rem;
   text-transform: lowercase;
-  color: #444;
   li:first-child {
     padding-left: 0;
   }
 
   a {
     font-size: 1rem;
+    font-weight: bold;
   }
 
   .title {
