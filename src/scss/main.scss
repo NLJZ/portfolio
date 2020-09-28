@@ -22,7 +22,11 @@ body {
 }
 
 a {
-  color: #222;
+  color: #444;
+}
+
+a:hover {
+  color: #111;
 }
 
 p {
@@ -63,7 +67,6 @@ li {
 section {
   max-width: 800px;
   padding: 0 1rem;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   img {
