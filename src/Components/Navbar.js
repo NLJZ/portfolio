@@ -1,12 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../images/nlj.png";
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
         <li className="title">
-          <NavLink to="/">Nathan Johnson</NavLink>
+          <NavLink to="/">
+            <img src={Logo} />
+          </NavLink>
         </li>
         <li className="phone-title">
           <NavLink to="/">NLJ</NavLink>

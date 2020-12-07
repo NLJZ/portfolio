@@ -24,12 +24,12 @@ const About = () => {
           <figcaption>Here I am!</figcaption>
         </figure>
         <p>
-          Since the popularization of the Internet in the mid-90s I have kept up
-          a bit with web technologies as a hobbyist. When a friend or family
-          member needed help with a website I was their man. I built simple
-          blogs, band pages, portfolios for photographers. Lately, with my eye
-          on a career change, I have been significantly leveling up my
-          programming skills. First with the{" "}
+          Since the popularization of the Internet in the mid-90s I have used
+          web technologies as a hobbyist. When a friend or family member needed
+          help with a website I was their man. I built simple blogs, band pages,
+          portfolios for photographers. Lately, with my eye on a career change,
+          I have been significantly leveling up my programming skills. First
+          with the{" "}
           <a
             href="https://careerfoundry.com/"
             target="_blank"
