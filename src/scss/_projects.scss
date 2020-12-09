@@ -88,6 +88,19 @@
   }
 }
 
+.projectContentAnimate {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .projectContent {
     display: inline-flex;

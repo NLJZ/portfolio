@@ -1,36 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import projectData from "../../data.json";
 import Project from "./Project.js";
-
-// const Projects = () => {
-//   const items = projectData.map((item) => {
-//     return (
-//       <div key={item.id} className="project">
-//         <div className="projectPic">
-//           <img src={process.env.PUBLIC_URL + `${item.img}`} />
-//         </div>
-//         <div className="projectInfo">
-//           <a href={item.link} target="blank">
-//             <h2>{item.project}</h2>
-//           </a>
-
-//           {/* <img src={process.env.PUBLIC_URL + `${item.img}`} /> */}
-//           <p>{item.description}</p>
-//           <p>{item.tech}</p>
-//         </div>
-//       </div>
-//     );
-//   });
-//   console.log(projectData);
-//   return (
-//     <section id="projects">
-//       <p>Here are some projects I have worked on recently...</p>
-//       <div id="projectHolder">{items}</div>
-//     </section>
-//   );
-// };
-
-// export default Projects;
 
 const Projects = () => {
   const [projectId, setProjectId] = useState(0);
@@ -66,7 +36,9 @@ const Projects = () => {
           {" "}
           &lsaquo;
         </div>
+
         <Project currentProject={currentProject} />
+
         <div
           className="next"
           onClick={() => {
